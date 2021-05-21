@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundimg">
+
+    <TextView
+        android:id="@+id/Display"
+        android:layout_width="292dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="618dp"
+        android:fontFamily="casual"
+        android:text="Hiker's Watch"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="274dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="1000dp"
+        android:layout_marginBottom="545dp"
+        android:alpha="1"
+        android:background="#49A882"
+        android:backgroundTint="#A65098BD"
+        app:cardBackgroundColor="#3E3131"
+        app:cardCornerRadius="25sp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="100sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:fontFamily="casual"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#F1EEEE"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:fontFamily="casual"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#F1EEEE"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/list3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:fontFamily="casual"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#F1EEEE"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/list4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:fontFamily="casual"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#F1EEEE"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
